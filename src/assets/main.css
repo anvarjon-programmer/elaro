@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "node_modules/slic-carousel/slick/slick";
+
+.container{
+  max-width: 1500px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 24px;
+}
