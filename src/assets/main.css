@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "node_modules/slic-carousel/slick/slick";
 
 .container{
   max-width: 1400px;

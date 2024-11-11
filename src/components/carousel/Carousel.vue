@@ -1,5 +1,5 @@
 <template>
-  <div class="relative flex items-center space-x-4 overflow-hidden rounded-[20px] z-10">
+  <div class="relative flex items-center space-x-4 overflow-hidden rounded-[20px] z-10 mt-14">
     <div class="hidden md:block">
       <button
       @click="previousSlideWithReset"
@@ -16,8 +16,8 @@
         class="relative w-full flex-shrink-0"
       >
         <img :src="image.url" :alt="image.alt" class="w-full object-cover" />
-        <div class="absolute inset-0 flex items-center justify-center">
-          <div class="bg-[#FF6600] p-4 text-center rounded-md">
+        <div class="absolute inset-0 flex items-center justify-center right-[950px] top-[250px]">
+          <div class=" p-4 text-center rounded-md right-10 bg-white">
             <p class="text-xl font-bold text-black">{{ image.caption }}</p>
           </div>
         </div>

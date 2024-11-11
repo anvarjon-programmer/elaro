@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div :class="['navbar bg-[#F7F7F7] hidden lg:block', { 'scrolled-navbar': isScrolled }]">
+    <div :class="['navbar bg-[#FF6600] hidden lg:block', { 'scrolled-navbar': isScrolled }]">
     <div class="bg-[#333333] text-white">
       <div
         class="container flex items-center justify-between"
@@ -92,39 +92,39 @@
         />
       </a>
       <div class="flex items-center gap-3 flex-grow mx-[50px]">
-        <router-link to="/mainCatalog"  href="/mainCatalog" class="bg-[#FF6600] text-white flex items-center pr-[20px] pl-[16px] h-[44px] rounded-lg text-xl gap-2"
+        <router-link to="/mainCatalog"  href="/mainCatalog" class="bg-white text-black flex items-center pr-[20px] pl-[16px] h-[44px] rounded-lg text-xl gap-2"
         >
           <i class="fa-solid fa-bars"></i>
           Catalog
         </router-link>
         <div
-          class="border-[#FF6600] border-2 rounded-xl w-full max-w-xl px-4 py-2 flex items-center h-[44px] gap-2"
+          class=" bg-white border-2 rounded-xl w-full max-w-xl px-4 py-2 flex items-center h-[44px] gap-2"
         >
           <i class="fa-solid fa-magnifying-glass mt-1"></i>
           <input
             type="text"
             placeholder="Qidirish"
-            class="outline-none bg-[#F7F7F7] w-full placeholder:text-black text-black"
+            class="outline-none bg-white w-full placeholder:text-black text-black"
           />
         </div>
       </div>
 
       <div class="flex items-center gap-10 ">
         <a href="/" class="flex flex-col items-center">
-          <i class="fa-regular fa-user text-[#333] text-2xl"></i>
-          <span class="hidden xl:block text-[Kirish] text-[#333] text-xl"
+          <i class="fa-regular fa-user text-white text-2xl"></i>
+          <span class="hidden xl:block text-[Kirish] text-white text-xl"
             >Kirish</span
           >
         </a>
         <a href="/" class="flex flex-col items-center">
-          <i class="fa-regular fa-heart text-[#333] text-2xl"></i>
-          <span class="hidden xl:block text-[Kirish] text-[#333] text-xl"
+          <i class="fa-regular fa-heart text-white text-2xl"></i>
+          <span class="hidden xl:block text-[Kirish] text-white text-xl"
             >Sevimlilar
           </span>
         </a>
         <a href="/" class="flex flex-col items-center">
-          <i class="fa-solid fa-cart-shopping text-[#333] text-2xl"></i>
-          <span class="hidden xl:block text-[Kirish] text-[#333] text-xl"
+          <i class="fa-solid fa-cart-shopping text-white text-2xl"></i>
+          <span class="hidden xl:block text-[Kirish] text-white text-xl"
             >Savatcha</span
           >
         </a>
@@ -132,7 +132,7 @@
     </div>
 
     <div v-if="!isScrolled" class="hidden lg:block">
-      <ul class="container text-[16px] flex items-center justify-between">
+      <ul class="container text-[16px] flex items-center justify-between font-bold text-white">
         <li>
           <router-link to="/promotions" class="flex items-center gap-1 pb-4">
             <i class="fa-solid fa-fire text-red-500"></i>
@@ -182,8 +182,8 @@
     </div>
   </div>
     <!-- Responsive navbar -->
-  <div :class="['navbar bg-[#F7F7F7] block lg:hidden', { 'scrolled-navbar z-50': isScrolled }]">
-    <div class="bg-[#F7F7F7] text-[#333] text-[12px]">
+  <div :class="['navbar bg-[#FF6600] block lg:hidden', { 'scrolled-navbar z-50': isScrolled }]">
+    <div class="bg-[#FF6600] text-[#333] text-[12px]">
       <div
         class="container flex items-center justify-between "
         v-if="!isScrolled"
@@ -273,13 +273,14 @@
 
     <div class="py-4">
       <div class="container flex items-center gap-5">
-      <div
-          class="border-yellow-500 border-2 rounded-xl w-full  px-4 py-2 flex items-center h-[44px] gap-2"
+        <div
+          class=" bg-white border-2 rounded-xl w-full  px-4 py-2 flex items-center h-[44px] gap-2"
         >
+          <i class="fa-solid fa-magnifying-glass mt-1"></i>
           <input
             type="text"
             placeholder="Qidirish"
-            class="outline-none bg-[#F7F7F7] w-full placeholder:text-black text-black"
+            class="outline-none bg-white w-full placeholder:text-black text-black"
           />
         </div>
         <button class="btn-burger flex items-center justify-center w-[40px] h-[40px] ml-[8px] rounded-lg border-[#e3e3e3] border ">
@@ -325,7 +326,7 @@ export default {
 }
 
 .scrolled-navbar {
-  @apply fixed top-0 left-0 w-full bg-[#F7F7F7] shadow-lg z-50;
+  @apply fixed top-0 left-0 w-full bg-[#FF6600] shadow-lg z-50;
 }
 .btn-burger{
   background: linear-gradient(0deg, #fff, #fff), #e7e7e7;
