@@ -1,4 +1,5 @@
 <template>
+  <div class="">
   <VueAIcarousel :Property="{ID: 'One',}">
 
 <div v-for="object in objects" v-bind:key="object.id" class="roundet-lg">
@@ -11,6 +12,7 @@
 </div>
 
 </VueAIcarousel>
+</div>
 </template>
 <script>
 import VueAIcarousel from "vue-ai-carousel"

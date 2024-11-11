@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "pinia": "^2.2.4",
+    "swiper": "^11.1.14",
     "vue": "^3.5.12",
     "vue-ai-carousel": "^1.1.1",
     "vue-carousel": "^0.18.0",

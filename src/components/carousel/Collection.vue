@@ -1,11 +1,21 @@
 <template>
-  <div>
-    <div class="flex items-center justify-between mb-8">
-      <h2 class="text-2xl font-bold">Xit savdo</h2>
+    <section>
+        <div>
+            <div class="flex items-center justify-between mb-8">
+      <h2 class="text-2xl font-bold">To'plamlar</h2>
       <a class="text-blue-600 text-[16px]" href="/">Barchasini ko'rish Xit savdo  <i class="fa-solid fa-arrow-right-long"></i></a>
     </div>
+            <div class="static flex gap-5 my-6">
+                <button 
+                    v-for="(label, index) in buttons" 
+                    :key="index" 
+                    :class="['bg-gray-200  shadow-xl rounded-lg', { 'bg-yellow-500': activeButton === index }]" 
+                    @click="setActiveButton(index)">
+                    {{ label }}
+                </button>
+            </div>
 
-    <!-- Swiper Carousel -->
+             <!-- Swiper Carousel -->
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div
@@ -45,17 +55,19 @@
 
       <div class="swiper-pagination"></div>
     </div>
-  </div>
+        </div>
+    </section>
 </template>
 
 <script>
 import Swiper from 'swiper';
 import 'swiper/swiper-bundle.css';
-
 export default {
-  data() {
-    return {
-      cardData: [
+    data() {
+        return {
+            activeButton: null, // Track the active button
+            buttons: ["1+1", "Tavsiya etamiz", "0-0-12"],
+            cardData: [
         {
           url: 'https://mini-io-api.texnomart.uz/catalog/product/3572/357273/198559/fef772b0-41e7-4ce0-9fd5-b6e27b17e35f-medium.webp',
           title: 'Kir yuvish mashinasi Haier HW60-BP10919B',
@@ -63,26 +75,31 @@ export default {
           desc: '254 620 so\'mdan / 24 oy',
           id: 2,
         },
-        // {
-        //   url: 'https://mini-io-api.texnomart.uz/catalog/product/3572/357273/198559/fef772b0-41e7-4ce0-9fd5-b6e27b17e35f-medium.webp',
-        //   title: 'Kir yuvish mashinasi Haier HW60-BP10919B',
-        //   caption: 'Smartfon Honor 200 Lite 8/256GB Midnight Black',
-        //   desc: '254 620 so\'mdan / 24 oy',
-        //   id: 3,
-        // },
-        // {
-        //   url: 'https://mini-io-api.texnomart.uz/catalog/product/3572/357273/198559/fef772b0-41e7-4ce0-9fd5-b6e27b17e35f-medium.webp',
-        //   title: 'Kir yuvish mashinasi Haier HW60-BP10919B',
-        //   caption: 'Smartfon Honor 200 Lite 8/256GB Midnight Black',
-        //   desc: '254 620 so\'mdan / 24 oy',
-        //   id: 4,
-        // },
-
+        {
+          url: 'https://mini-io-api.texnomart.uz/catalog/product/3572/357273/198559/fef772b0-41e7-4ce0-9fd5-b6e27b17e35f-medium.webp',
+          title: 'Kir yuvish mashinasi Haier HW60-BP10919B',
+          caption: 'Smartfon Honor 200 Lite 8/256GB Midnight Black',
+          desc: '254 620 so\'mdan / 24 oy',
+          id: 3,
+        },
+        {
+          url: 'https://mini-io-api.texnomart.uz/catalog/product/3572/357273/198559/fef772b0-41e7-4ce0-9fd5-b6e27b17e35f-medium.webp',
+          title: 'Kir yuvish mashinasi Haier HW60-BP10919B',
+          caption: 'Smartfon Honor 200 Lite 8/256GB Midnight Black',
+          desc: '254 620 so\'mdan / 24 oy',
+          id: 4,
+        },
         
+       
       ],
-    };
-  },
-  mounted() {
+        };
+    },
+    methods: {
+        setActiveButton(index) {
+            this.activeButton = index;
+        }
+    },
+    mounted() {
     // Initialize Swiper when the component is mounted
     new Swiper('.swiper-container', {
       slidesPerView: 3, // How many slides to show at once
@@ -98,10 +115,10 @@ export default {
       },
     });
   },
-};
+}
 </script>
 
-<style scoped>
+<style>
 .swiper-container {
   width: 100%;
   height: 100%;

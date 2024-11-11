@@ -92,12 +92,11 @@
         />
       </a>
       <div class="flex items-center gap-3 flex-grow mx-[50px]">
-        <button
-          class="bg-[#FF6600] text-white flex items-center pr-[20px] pl-[16px] h-[44px] rounded-lg text-xl gap-2"
+        <router-link to="/mainCatalog"  href="/mainCatalog" class="bg-[#FF6600] text-white flex items-center pr-[20px] pl-[16px] h-[44px] rounded-lg text-xl gap-2"
         >
           <i class="fa-solid fa-bars"></i>
           Catalog
-        </button>
+        </router-link>
         <div
           class="border-[#FF6600] border-2 rounded-xl w-full max-w-xl px-4 py-2 flex items-center h-[44px] gap-2"
         >
@@ -135,10 +134,10 @@
     <div v-if="!isScrolled" class="hidden lg:block">
       <ul class="container text-[16px] flex items-center justify-between">
         <li>
-          <a href="#" class="flex items-center gap-1 pb-4">
+          <router-link to="/promotions" class="flex items-center gap-1 pb-4">
             <i class="fa-solid fa-fire text-red-500"></i>
             Aksiyalar
-          </a>
+          </router-link>
         </li>
 
         <li>
