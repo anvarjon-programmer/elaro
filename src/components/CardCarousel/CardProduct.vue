@@ -17,7 +17,7 @@
     >
       <Slide v-for="product in products" :key="product.id" class="[400px]">
         <div
-          class="swiper-slide flex flex-col overflow-hidden group max-w-[250px] h-[400px] rounded-lg hover:shadow-xl transition-shadow duration-300 bg-white p-1"
+          class="w-full md:swiper-slide flex flex-col overflow-hidden group max-w-[250px] h-[400px] rounded-lg hover:shadow-xl transition-shadow duration-300 bg-white p-1"
         >
           <a href="#" class="relative h-[220px]">
             <img
