@@ -6,9 +6,10 @@
       ref="carousel"
       :autoplay="false"
       :breakpoints="{
-        500: { itemsToShow: 1 },
+        350: { itemsToShow: 1 },
         400: { itemsToShow: 1 },
-        640: { itemsToShow: 1 },
+        500: { itemsToShow: 2 },
+        640: { itemsToShow: 3 },
         768: { itemsToShow: 3 },
         1024: { itemsToShow: 4 },
         1280: { itemsToShow: 5 },
