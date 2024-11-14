@@ -1,5 +1,5 @@
 <template>
-    <div class="carousel-container mt-5">
+    <div class=" carousel-container mt-5 mb-10 md:">
       <Carousel
         :itemsToShow="1"
         :mouseDrag="false"
@@ -8,20 +8,22 @@
 
       ref="carousel"
       >
-        <Slide  class="h-[350px]">
+        <Slide  class="h-full">
           <div>
             <img class="w-full rounded-[30px]" src="https://mini-io-api.texnomart.uz/newcontent/slider/338/a8A2KSBfLXpYBPvyOvW1ebYk74MO2gEpptLYKtV1.webp" alt="">
           </div>
         </Slide>
        
       </Carousel>
-      <div class="flex items-center justify-between -translate-y-[200px]">
+      <div class="hidden md:block">
+        <div class=" flex items-center justify-between -translate-y-[200px]">
         <button @click="prev1" class="carousel-button prev-button shadow-lg">
           <i class="fa-solid fa-angle-left text-2xl"></i>
         </button>
       <button @click="next1" class="carousel-button next-button shadow-lg ml-11">
         <i class="fa-solid fa-angle-right text-2xl"></i>
       </button>
+      </div>
       </div>
     </div>
   </template>
