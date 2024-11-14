@@ -6,10 +6,11 @@
       ref="carousel"
       :autoplay="false"
       :breakpoints="{
+        500: { itemsToShow: 1 },
         400: { itemsToShow: 1 },
-        500: { itemsToShow: 3 },
-        768: { itemsToShow: 4 },
-        1024: { itemsToShow: 5 },
+        640: { itemsToShow: 1 },
+        768: { itemsToShow: 3 },
+        1024: { itemsToShow: 4 },
         1280: { itemsToShow: 5 },
       }"
     >
@@ -70,7 +71,7 @@
         </div>
       </Slide>
     </Carousel>
-    <div class="">
+    <div class="hidden md:block">
       <button @click="prev" class="carousel-button prev-button shadow-lg">
         <i class="fa-solid fa-angle-left text-2xl"></i>
       </button>

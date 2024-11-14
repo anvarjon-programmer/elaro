@@ -30,7 +30,7 @@
           </div>
         </Slide>
       </Carousel>
-      <div class="">
+      <div class="hidden md:block">
         <button @click="prev" class="carousel-button prev-button shadow-lg">
           <i class="fa-solid fa-angle-left text-2xl"></i>
         </button>
