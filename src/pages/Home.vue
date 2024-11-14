@@ -9,6 +9,7 @@
       </div>
        <div class="">
       <NewProduct/>
+       <LogoBrand/>
 
        </div>      
       <div>
@@ -23,13 +24,15 @@ import HitSale from "@/components/hitSale/HitSale.vue";
 import Hero from "./hero/Hero.vue";
 import Brands from "./Brands.vue";
 import NewProduct from "./NewProduct.vue";
+import LogoBrand from "./LogoBrand.vue";
 
 export default {
   components: {
         HitSale,
         Hero,
         Brands,
-        NewProduct
+        NewProduct,
+        LogoBrand
   },
 };
 </script>

@@ -67,7 +67,7 @@
             </div>
             <!--Grid-->
             <div class="py-7 border-t border-gray-200">
-               <div class="flex items-center justify-between">
+               <div class=" md:flex items-center justify-between">
                 <p class="text-[13px] text-[#C2C2C2] max-w-[600px]">
                     2016-2024 © texnomart.uz. Barcha huquqlar himoyalangan. Tovarlarning ko'rsatilgan qiymati va ularni sotib olish shartlari joriy sanaga amal qiladi
                 </p>
